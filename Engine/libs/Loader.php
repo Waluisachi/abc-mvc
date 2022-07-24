@@ -23,6 +23,7 @@ class Loader
     if (!isset($this->URI[0])) {
       require ("./src/controllers/index.php");
       $this->controller = new Index();
+      $this->controller->loadModel("index");
       $this->controller->index();
       return false;
     }
@@ -32,6 +33,8 @@ class Loader
     if (file_exists($this->path)) {
       require ($this->path);
       $this->controller = new $this->URI[0]();
+      $this->controller->loadModel($this->URI[0]);
+
 
       if (!empty($this->URI[2])) {
         if (method_exists($this->controller, $this->URI[1])) {

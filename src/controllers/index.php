@@ -18,7 +18,11 @@
 
     public function home($params = "")
     {
-      print_r($params);
+      // $this->model->users();
+      // $this->model->insertUsers();
+      // $this->model->updateUsers();
+      $this->model->deleteUsers();
+
     }
   }
 
