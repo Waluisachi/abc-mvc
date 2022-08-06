@@ -1,7 +1,7 @@
 # ABC-mvc Is Routing and Rendering Engine.
 
 ## Overview
-####### This is a PHP based system aiming at reducing work needed to setup a PHP web application project.
+###### This is a PHP based system aiming at reducing work needed to setup a PHP web application project.
 ###### This engine provides the following modules under its basic contents:-
 ###### Rendering engine
 ###### Database connection module setup
@@ -36,11 +36,11 @@
   ```
 ##### Create a controller for each route 
 #####
-  ````public function index()
+  ```` public function index()
     {
       $this->templet->title = "Abc mvc";
       $this->templet->render("index/index");
-    }````
+    } ````
   
   
 
