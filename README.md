@@ -10,7 +10,12 @@
 ## How it works
 #### Controllers
 ##### Create a controller with name @example 'Index'. 
-``` class Index extends MasterController
+``` 
+   /**
+   * @Extends MasterController
+   */
+  class Index extends MasterController
+  {
   {
 
     function __construct()
@@ -36,11 +41,13 @@
   ```
 ##### Create a controller for each route 
 #####
-  ```` public function index()
+  ```` 
+  public function index()
     {
       $this->templet->title = "Abc mvc";
       $this->templet->render("index/index");
-    } ````
+    } 
+  ````
   
   
 
