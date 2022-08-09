@@ -48,6 +48,6 @@
       $this->templet->render("index/index");
     } 
   ````
-  
+  Here you can set page title as shown, call a templet(view file) located under views folder, 'index' directory with file name as 'index.php'
   
 
